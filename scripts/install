@@ -103,7 +103,7 @@ sudo yunohost app ssowatconf
 # Wordpress installation
 echo -e "127.0.0.1 $domain #WORDPRESS" | sudo tee -a /etc/hosts
 sleep 1
-curl -kL -H "Host: $domain" --data "&weblog_title=YunoBlog&user_name=$admin_wordpress&admin_password=$db_pwd&admin_password2=$db_pwd&admin_email=$admin_wordpress@$domain&language=$language&Submit=Install+WordPress" https://localhost$path/wp-admin/install.php?step=2 > /dev/null 2>&1
+curl -kL -H "Host: $domain" --data "&weblog_title=YunoBlog&user_name=$admin_wordpress&admin_password=$db_pwd&admin_password2=$db_pwd&admin_email=dfjerstad@gmail.com&language=$language&Submit=Install+WordPress" https://localhost$path/wp-admin/install.php?step=2 > /dev/null 2>&1
 
 echo -n "Please wait during Wordpress installation" >&2
 for i in `seq 1 300`
